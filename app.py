@@ -86,14 +86,18 @@ Focus on the core issue and how a new product or service could address it.
 
 "{text}"
 
-Identify:
+Your task Identify:
 If the post describes a clear problem that can be solved with a startup idea. reply only True/False. If True, also provide:
 1. The problem mentioned
 2. A startup idea to solve it
 3. Target users
 4. Market potential (Low / Medium / High)
 5. Category (SaaS / Marketplace / Mobile App / AI Tool)
-6. Existing solutions
+6. Initial Investment Required (Low / Medium / High)
+7. Customer Retention Potential
+8. Revenue Model (Subscription, One-time, Freemium, Commission, ads etc)
+9. Problem Duration (is the problem likely to persist(recurring) or is it a temporary issue?)
+10. Existing solutions
 
 Format response as:
 
@@ -103,7 +107,16 @@ Startup Idea:
 Target Users:
 Market Potential:
 Category:
+Initial Investment Required:
+Customer Retention Potential:
+Revenue Model:
+Problem Duration
 Existing Solutions:
+
+IMPORTANT:
+- Do NOT add any extra explanation
+- Do NOT change format
+- Be concise and specific
 """
 
     try:

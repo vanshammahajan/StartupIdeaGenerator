@@ -76,29 +76,38 @@ Output
 (TXT file)
 
 
-# Prompt Design
+## Prompt Design
 The application uses a carefully structured prompt to guide the Large Language Model (TinyLlama) in analyzing Reddit posts and generating startup ideas.
 
-The prompt provides the model with clear instructions to:
-- Determine whether the post describes a real problem
-- Extract the core issue mentioned by the user
-- Suggest a startup idea that could solve the problem
-- Identify target users
-- Estimate market potential
-- Categorize the idea
-- Mention existing solutions
+# Prompt Objectives
+The model is instructed to:
+
+- Determine whether the Reddit post describes a real, specific, and solvable problem
+- Extract the core problem statement
+- Suggest a concrete startup idea (not generic)
+- Identify the target users
+- Estimate market potential (Low / Medium / High)
+- Categorize the solution (SaaS / Marketplace / Mobile App / AI Tool)
+- Estimate initial investment required (Low / Medium / High)
+- Evaluate customer retention potential (with reasoning)
+- Define the revenue model (Subscription, Freemium, Ads, Commission, etc.)
+- Determine whether the problem is temporary or recurring
+- Identify existing solutions or competitors
+
+The prompt provides the model with clear instructions to respond in a fixed format containing:
+- Response: True / False
+- Problem:
+- Startup Idea:
+- Target Users:
+- Market Potential:
+- Category:
+- Initial Investment Required:
+- Customer Retention Potential:
+- Revenue Model:
+- Problem Duration:
+- Existing Solutions:
 
 This structured prompting helps ensure that the AI generates consistent, organized, and actionable insights rather than unstructured responses.
-
-The model is asked to respond in a fixed format containing:
-- Response (True / False)
-- Problem
-- Startup Idea
-- Target Users
-- Market Potential
-- Category
-- Existing Solutions
-
 Using this prompt structure improves the reliability of the system and makes it easier to process and store the generated results programmatically.
 
 
