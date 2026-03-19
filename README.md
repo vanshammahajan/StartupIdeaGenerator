@@ -31,7 +31,20 @@ startup-idea-generator
 ├── ideas.txt           # Generated startup ideas
 └── .gitignore          # Ignore sensitive files
 ```
-
+Sensitive Files (Ignored via .gitignore)
+The .gitignore file ensures that sensitive data is not pushed to GitHub.
+It contains:
+- .env
+- access.py
+```
+Contents of Sensitive Files
+.env 
+  - HUGGINGFACEHUB_ACCESS_TOKEN = "ACCESS_TOKEN"
+access.py
+  - client_id = "YOUR_CLIENT_ID"
+  - client_secret = "YOUR_SECRET"
+  - user_agent = "startup-idea-generator"
+ ```
 # Technologies Used
 - Python
 - PRAW (Reddit API)
