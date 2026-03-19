@@ -8,6 +8,7 @@ The goal of this project is to automatically identify problems people discuss on
 
 
 # Simple Architecture
+```
 Reddit API
      ↓
 Fetch Posts
@@ -17,9 +18,10 @@ Problem Detection
 Idea Generator
      ↓
 Display Results
-
+```
 
 # Project Structure
+```
 startup-idea-generator
 │
 ├── app.py              # Main application
@@ -28,7 +30,7 @@ startup-idea-generator
 ├── requirements.txt    # Project dependencies
 ├── ideas.txt           # Generated startup ideas
 └── .gitignore          # Ignore sensitive files
-
+```
 
 # Technologies Used
 - Python
@@ -51,6 +53,7 @@ The system analyzes Reddit posts and identifies problems using two different app
 
 
 # AI Method 
+```
 User
   │
   ▼
@@ -74,7 +77,7 @@ Idea Generation / Classification
   ▼
 Output
 (TXT file)
-
+```
 
 ## Prompt Design
 The application uses a carefully structured prompt to guide the Large Language Model (TinyLlama) in analyzing Reddit posts and generating startup ideas.
