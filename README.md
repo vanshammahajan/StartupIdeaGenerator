@@ -26,7 +26,7 @@ startup-idea-generator
 │
 ├── app.py              # Main application
 ├── access.py           # Reddit API credentials
-├── .env                # Environment variables
+├── .env                # LLM access token 
 ├── requirements.txt    # Project dependencies
 ├── ideas.txt           # Generated startup ideas
 └── .gitignore          # Ignore sensitive files
